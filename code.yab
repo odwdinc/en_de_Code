@@ -1,0 +1,5 @@
+open "keys.txt" for writing as #1
+for x=4 to 40
+y=(((2*x^2)*(x^3+2*x))^(1/9))*100000000
+print #1 int(y)
+next x
